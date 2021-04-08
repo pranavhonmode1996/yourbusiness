@@ -16,6 +16,10 @@ const workerRegistration = new mongoose.Schema({
         type: String,
         required: true
     },
+    image:{
+        type: String,
+        required: true
+    },
     title:{
         type: String,
         required: true
@@ -56,23 +60,27 @@ const sellerRegistration = new mongoose.Schema({
         type: String,
         required: true
     },
-    title:{
+    image:{
         type: String,
         required: true
     },
-    experience:{
+    shopName:{
+        type: String,
+        required: true
+    },
+    from:{
         type: Number,
         required: true
     },
-    age:{
+    shopAddress:{
         type: Number,
         required: true
     },
-    contactNumber:{
+    pinCode:{
         type: Number,
         required: true
     },
-    charges:{
+    shopContactNumber:{
         type: String,
         required: true
     },

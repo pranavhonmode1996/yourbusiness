@@ -2,6 +2,7 @@ import Main from '../view/Main';
 import BLogin from '../view/BLogin';
 import BSignUp from '../view/BSignUp';
 import AdminDashboard from '../view/AdminDashboard';
+import MainView from '../view/MainView';
 import NavBar from '../reusableComponents/NavBar';
 import SloganContainer from '../reusableComponents/SloganContainer';
 import AdminMenuItem from '../reusableComponents/AdminMenuItem';
@@ -14,6 +15,7 @@ export {
     BLogin,
     BSignUp,
     AdminDashboard,
+    MainView,
     NavBar,
     SloganContainer,
     AdminMenuItem,

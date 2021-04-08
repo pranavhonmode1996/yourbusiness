@@ -6,23 +6,13 @@ const express = require("express");
 const App = express();
 const mongoose = require("mongoose");
 require('./model/AdminModels');
+const SWRouter = require('./routes/SWRoutes.js');
 const { MONGO_URI } = require("./keys/Key");
 const PORT = process.env.PORT || 5000;
-const multer = require('multer');
-const fs = require('fs');
 
 
 
-var storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, './public/uploads')
-  },
-  filename: function (req, file, cb) {
-    cb(null, file.fieldname + '-' + Date.now())
-  }
-})
 
-var upload = multer({ storage: storage })
 
 
 dotenv.config();
@@ -32,11 +22,14 @@ App.use(bodyParser.json());
 App.use(bodyParser.urlencoded({limit: '10mb', extended: true}));
 App.use(express.json());
 App.use(express.urlencoded({ extended: false }));
+App.use(SWRouter);
+
 // Mongodb connection
 mongoose.connect(MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
+
 mongoose.connection.on("connected", () => {
   console.log("Connected to mongodb database");
 });

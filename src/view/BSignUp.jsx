@@ -6,6 +6,7 @@ const BSignUp = () => {
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [image, setImage] = useState('');
     const [sOrW, setSOrW] = useState(false)
     const [title, setTitle] = useState('');
     const [experience, setExperience] = useState('');
@@ -40,6 +41,10 @@ const BSignUp = () => {
 
                         <label htmlFor="">Password</label>
                         <input type="password" required value={password} onChange={e => setPassword(e.target.value)} />
+
+                        <label htmlFor="">Profile Image</label>
+                        <input type="file" required value={image} onChange={e => setImage(e.target.value)} />
+
 
                         <div className="areYou">
                             <div className="inline">
