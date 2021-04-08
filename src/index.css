@@ -12,9 +12,9 @@
   --secondary: #254e58;
   --ternary: #112d32;
   --dark: #000000;
-  --button: #B4DFE5;
-  --pure: #FFFFFF;
-  --cardBG: #F0EBF4;
+  --button: #b4dfe5;
+  --pure: #ffffff;
+  --cardBG: #f0ebf4;
 }
 body {
   /* padding: 0 0.4rem; */
@@ -41,7 +41,8 @@ section .container .nav-bar {
   display: flex;
   justify-content: center;
 }
-.nav-bar ul li, .link {
+.nav-bar ul li,
+.link {
   text-decoration: none;
   list-style: none;
   padding: 0 0.8rem;
@@ -51,7 +52,7 @@ section .container .nav-bar {
 .nav-bar ul li:hover {
   background-color: var(--button);
   border-radius: 20px;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
 }
 
 .sloganContainer {
@@ -88,7 +89,7 @@ section .container .nav-bar {
   background: var(--secondary);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
 }
 .sloganContainer .image img {
   width: 300px;
@@ -125,14 +126,18 @@ section .container .nav-bar {
   margin: 20px auto;
   border-radius: 50%;
 }
-.container .LoginContainer input[type="text"], input[type="password"], input[type="decimal"], input[type="date"], button {
+.container .LoginContainer input[type="text"],
+input[type="password"],
+input[type="decimal"],
+input[type="date"],
+button {
   border: none;
   background: transparent;
   height: 40px;
   margin: 10px 0;
   border-radius: 20px;
-  box-shadow: 2px 2px 15px rgba(0,0,0,0.4),
-              -2px -2px 15px rgba(255,255,255,0.4);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4),
+    -2px -2px 15px rgba(255, 255, 255, 0.4);
   outline: none;
   padding: 0 1rem;
   letter-spacing: 0.1em;
@@ -177,13 +182,16 @@ input[type="radio"] {
   display: flex;
   justify-content: center;
 }
-.sellerSection, .workerSection {
+.sellerSection,
+.workerSection {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 20px 0;
 }
-.sellerSection input[type="text"], input[type="date"], .workerSection input[type="text"] {
+.sellerSection input[type="text"],
+input[type="date"],
+.workerSection input[type="text"] {
   width: 300px;
 }
 input[type="decimal"] {
@@ -215,7 +223,7 @@ input[type="decimal"] {
   transition: 0.6s;
 }
 .container .adminMenu .adminMenuItem:hover {
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 }
 .admin-link {
   text-decoration: none;
@@ -232,7 +240,7 @@ input[type="decimal"] {
 }
 
 .enquiryContainer {
-  background: rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 .enquiryContainer .enquiryFilters {
   display: flex;
@@ -253,7 +261,7 @@ input[type="decimal"] {
   font-size: 1rem;
   border: none;
   background: transparent;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
   letter-spacing: 0.1em;
   outline: none;
 }
@@ -273,7 +281,7 @@ input[type="decimal"] {
   padding: 1rem;
   background-color: var(--cardBG);
   border-radius: 4px;
-  box-shadow: 2px 2px 15px rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
 }
 .enquiry-items .enquiryDateAndTime {
   display: flex;
@@ -286,7 +294,7 @@ input[type="decimal"] {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 .orderContainer .orderSection {
   position: absolute;
@@ -298,7 +306,7 @@ input[type="decimal"] {
   border-radius: 20px;
   padding: 1rem;
   background: var(--cardBG);
-  box-shadow: 2px 2px 15px rgba(255,255,255,0.6);
+  box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
 }
 .orderImageSection {
   text-align: center;
@@ -330,7 +338,7 @@ input[type="decimal"] {
   width: 60vw;
   height: 40vh;
   background: var(--pure);
-  box-shadow: 2px 2px 15px rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
   border-radius: 20px;
   padding: 1rem;
   display: flex;
@@ -354,7 +362,7 @@ input[type="decimal"] {
 }
 .s-w-container .s-w-one:hover {
   transform: translateY(-4px);
-  box-shadow: 2px 2px 15px rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
   opacity: 0.8;
 }
 .s-w-container .s-w-one strong {
@@ -369,13 +377,20 @@ input[type="decimal"] {
 
 .workersContainer {
   padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .workersContainer .workerItemContainer {
   width: 250px;
   height: 350px;
   background: var(--cardBG);
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
   padding: 0.8em;
+  margin-bottom: 1rem;
+}
+.workersContainer .workerItemContainer:hover {
+  opacity: 0.8;
 }
 .workersContainer .workerItemContainer .top-actions {
   display: flex;
@@ -385,6 +400,9 @@ input[type="decimal"] {
   width: 100%;
   height: 50%;
   margin-top: 1rem;
+}
+.active-star {
+  color: tomato;
 }
 @media (max-width: 900px) {
   .sloganContainer {

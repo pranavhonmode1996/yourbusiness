@@ -13,6 +13,7 @@ import EnquiryItems from '../reusableComponents/EnquiryItems';
 import Order from '../reusableComponents/Order';
 import OrderItems from '../reusableComponents/OrderItems';
 import WorkerOrSeller from '../reusableComponents/WorkerOrSeller';
+import WorkerItemContainer from '../reusableComponents/WorkerItemContainer';
 export {
     Main,
     BLogin,
@@ -29,4 +30,5 @@ export {
     Order,
     OrderItems,
     WorkerOrSeller,
+    WorkerItemContainer,
 }
