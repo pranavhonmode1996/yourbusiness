@@ -6,6 +6,9 @@ const SloganContainer = () => {
     const handleNavigation = () => {
         history.push('/businessLogin');
     }
+    const handleMainView = () => {
+        history.push('/mainView');
+    }
     return (
         <div className="sloganContainer">
             <div className="info">
@@ -13,7 +16,7 @@ const SloganContainer = () => {
                     Start your business online <br /> with <strong>Amezona</strong>
                 </span><br />
                 <button onClick={handleNavigation}>Start Business</button>
-                <button>Read More</button>
+                <button onClick={handleMainView}>Read More</button>
             </div>
             <div className="image">
                 <img src={Image} alt="" />

@@ -1,5 +1,5 @@
 import "./App.css";
-import { AdminDashboard, BLogin, BSignUp, Main, MainView, NavBar } from "./imports/Imports";
+import { AdminDashboard, BLogin, BSignUp, Main, MainView, NavBar, SellersMainView, WorkersMainView } from "./imports/Imports";
 import { Route, Switch } from "react-router-dom";
 
 function App() {
@@ -12,6 +12,8 @@ function App() {
         <Route path="/businessSignUp" component={BSignUp} />
         <Route path="/adminDashboard/:id" component={AdminDashboard} />
         <Route path="/mainView" component={MainView} />
+        <Route path="/workersMV" component={WorkersMainView} />
+        <Route path="/sellersMV" component={SellersMainView} />
       </Switch>
     </>
   );
